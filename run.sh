@@ -28,6 +28,7 @@ if [ ! -d "$VENV_DIR" ]; then
     source "${VENV_DIR}"/bin/activate
     "${VENV_DIR}"/bin/python -m pip install --upgrade pip
     "${VENV_DIR}"/bin/python -m pip install -r requirements.txt
+    git clone https://github.com/ltdrdata/ComfyUI-Manager.git custom_nodes/ComfyUI-Manager
 else
     source "${VENV_DIR}"/bin/activate
 fi
